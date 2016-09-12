@@ -42,7 +42,9 @@ public class Donate extends AppCompatActivity {
 
 
     public void donateButtonPressed(View view) {
-        Log.v("Donate", "Donate Pressed!");
+        int amount = amountPicker.getValue();
+        Log.v("Donate", "Donate Pressed! with amount " + amount);
+
     }
 
     @Override
