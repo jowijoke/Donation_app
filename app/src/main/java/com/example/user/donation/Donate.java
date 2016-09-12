@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.util.Log;
 
@@ -45,5 +46,10 @@ public class Donate extends AppCompatActivity
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void donateButtonPressed (View view)
+    {
+        Log.v("Donate", "Donate Pressed!");
     }
 }
