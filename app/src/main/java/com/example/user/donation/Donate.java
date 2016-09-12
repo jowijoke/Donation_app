@@ -44,15 +44,7 @@ public class Donate extends AppCompatActivity {
     public void donateButtonPressed(View view) {
         int amount = amountPicker.getValue();
         int radioId = paymentMethod.getCheckedRadioButtonId();
-        String method = "";
-        if (radioId == R.id.PayPal)
-        {
-            method = "PayPal";
-        }
-        else
-        {
-            method = "Direct";
-        }
+        String method = radioId == R.id.PayPal ? "PayPal" : "Direct";
         Log.v("Donate", "Donate Pressed! with amount " + amount + ", method: " + method);
 
     }
