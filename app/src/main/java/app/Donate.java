@@ -1,4 +1,4 @@
-package com.example.user.donation;
+package app;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.RadioGroup;
 import android.widget.NumberPicker;
 import android.widget.ProgressBar;
+
+import app.donation.R;
 
 public class Donate extends AppCompatActivity {
 
