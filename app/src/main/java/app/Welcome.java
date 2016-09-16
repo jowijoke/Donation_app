@@ -24,4 +24,10 @@ public class Welcome extends AppCompatActivity{
     {
         startActivity (new Intent(this, Donate.class));
     }
+
+    public void signupPressed (View view)
+    {
+        startActivity (new Intent(this, Signup.class));
+    }
 }
+

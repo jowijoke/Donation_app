@@ -43,7 +43,6 @@
         android:hint="@string/signupFirstname"
         android:inputType="textPersonName"/>
 
-    <requestFocus />
     <EditText
         android:id="@+id/lastName"
         android:layout_width="wrap_content"
@@ -86,6 +85,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="28dp"
+        android:onClick="signupPressed"
         android:text="@string/signupRegister" />
 
 </RelativeLayout>
