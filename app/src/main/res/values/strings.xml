@@ -16,4 +16,12 @@
     <string name="welcomeSignup">Sign up</string>
     <string name="PayPal">PayPal</string>
     <string name="Direct">Direct</string>
+    <string name="activity_signup">Signup</string>
+    <string name="signupTitle">Sign up for the Donation App</string>
+    <string name="signupSubtitle">Enter details below</string>
+    <string name="signupFirstname">First name</string>
+    <string name="signupLastName">Last Name</string>
+    <string name="signupEmail">Email</string>
+    <string name="signupPassword">Password</string>
+    <string name="signupRegister">Register</string>
 </resources>
