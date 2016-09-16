@@ -7,16 +7,16 @@ import android.view.View;
 
 import app.donation.R;
 
-public class Signup extends AppCompatActivity {
+public class Login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
-    }
-    public void signupPressed (View view)
-    {
-        startActivity (new Intent(this, Welcome.class));
+        setContentView(R.layout.activity_login);
     }
 
+    public void signInPressed (View view)
+    {
+        startActivity (new Intent(this, Donate.class));
+    }
 }
