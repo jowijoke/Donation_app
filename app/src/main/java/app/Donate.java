@@ -78,6 +78,8 @@ public class Donate extends AppCompatActivity
             String totalDonatedStr = "$" + app.totalDonated;
             amountTotal.setText(totalDonatedStr);
         }
+        amountText.setText("");
+        amountPicker.setValue(0);
     }
 
     @Override
