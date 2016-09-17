@@ -9,6 +9,8 @@ import java.util.List;
 
 public class DonationApp extends Application
 {
+    public List <User> users = new ArrayList<User>();
+
     public final int       target       = 10000;
     public int             totalDonated = 0;
     public List<Donation> donations    = new ArrayList<Donation>();
@@ -27,6 +29,11 @@ public class DonationApp extends Application
             toast.show();
         }
         return targetAchieved;
+    }
+
+    public void newUser(User user)
+    {
+        users.add(user);
     }
 
     @Override
