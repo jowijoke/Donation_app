@@ -1,10 +1,8 @@
 package app;
-import app.donation.R;
-
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,6 +13,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.List;
+
+import app.donation.R;
 
 public class Report extends AppCompatActivity
 {
@@ -47,6 +47,8 @@ public class Report extends AppCompatActivity
         switch (item.getItemId())
         {
             case R.id.menuDonate : startActivity (new Intent(this, Donate.class));
+                break;
+            case R.id.menuLogout : startActivity (new Intent(this, Welcome.class));
                 break;
         }
         return true;
