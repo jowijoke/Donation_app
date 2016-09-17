@@ -1,4 +1,4 @@
-package app;
+package app.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +13,8 @@ import android.widget.ProgressBar;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import app.Donation;
+import app.main.DonationApp;
 import app.donation.R;
 
 

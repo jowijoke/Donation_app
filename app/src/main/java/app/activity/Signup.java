@@ -1,4 +1,4 @@
-package app;
+package app.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import app.main.DonationApp;
+import app.User;
 import app.donation.R;
 
 public class Signup extends AppCompatActivity {

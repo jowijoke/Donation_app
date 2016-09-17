@@ -1,10 +1,12 @@
-package app;
+package app.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import app.activity.Login;
+import app.activity.Signup;
 import app.donation.R;
 /**
  * Created by User on 16/09/2016.

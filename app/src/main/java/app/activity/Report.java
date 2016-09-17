@@ -1,4 +1,5 @@
-package app;
+package app.activity;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,7 +15,9 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import app.Donation;
 import app.donation.R;
+import app.main.DonationApp;
 
 public class Report extends AppCompatActivity
 {

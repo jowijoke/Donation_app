@@ -1,4 +1,4 @@
-package app;
+package app.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import app.main.DonationApp;
 import app.donation.R;
 
 public class Login extends AppCompatActivity {
