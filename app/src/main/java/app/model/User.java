@@ -1,9 +1,10 @@
-package app;
+package app.model;
 
 /**
  * Created by User on 17/09/2016.
  */
 public class User {
+    public String _id;
     public String firstName;
     public String lastName;
     public String email;

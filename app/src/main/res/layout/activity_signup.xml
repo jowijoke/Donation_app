@@ -32,18 +32,6 @@
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <EditText
-        android:id="@+id/firstName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/signupSubtitle"
-        android:layout_marginTop="40dp"
-        android:ems="10"
-        android:hint="@string/signupFirstname"
-        android:inputType="textPersonName"/>
-
-    <EditText
         android:id="@+id/lastName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -87,5 +75,16 @@
         android:layout_marginBottom="28dp"
         android:onClick="signupPressed"
         android:text="@string/signupRegister" />
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="@string/signupFirstname"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/signupSubtitle"
+        android:layout_alignEnd="@+id/signup" />
 
 </RelativeLayout>

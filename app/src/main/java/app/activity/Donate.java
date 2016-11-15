@@ -13,7 +13,7 @@ import android.widget.ProgressBar;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-import app.Donation;
+import app.model.Donation;
 import app.main.DonationApp;
 import app.donation.R;
 

@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import app.Donation;
+import app.model.Donation;
 import app.donation.R;
 import app.main.DonationApp;
 

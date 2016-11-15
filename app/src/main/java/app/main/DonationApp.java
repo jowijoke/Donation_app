@@ -7,8 +7,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-import app.Donation;
-import app.User;
+import app.model.Donation;
+import app.model.User;
 
 public class DonationApp extends Application
 {

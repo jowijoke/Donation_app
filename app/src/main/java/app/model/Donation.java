@@ -1,9 +1,10 @@
-package app;
+package app.model;
 
 /**
  * Created by User on 12/09/2016.
  */
 public class Donation {
+    public String _id;
     public int    amount;
     public String method;
 

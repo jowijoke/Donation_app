@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import app.main.DonationApp;
-import app.User;
+import app.model.User;
 import app.donation.R;
 
 public class Signup extends AppCompatActivity {
