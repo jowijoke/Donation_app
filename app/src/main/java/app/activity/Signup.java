@@ -5,18 +5,26 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import app.donation.R;
 import app.main.DonationApp;
 import app.model.User;
-import app.donation.R;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
-public class Signup extends AppCompatActivity {
+public class Signup extends AppCompatActivity implements Callback<User> {
+
+    private DonationApp app;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+        app = (DonationApp) getApplication();
     }
+
     public void signupPressed (View view)
     {
         TextView firstName = (TextView)  findViewById(R.id.firstName);
@@ -24,13 +32,24 @@ public class Signup extends AppCompatActivity {
         TextView email     = (TextView)  findViewById(R.id.Email);
         TextView password  = (TextView)  findViewById(R.id.Password);
 
-        User user = new User (firstName.getText().toString(), lastName.getText().toString(), email.getText().toString(), password.getText().toString());
+        User user = new User(firstName.getText().toString(), lastName.getText().toString(), email.getText().toString(), password.getText().toString());
 
         DonationApp app = (DonationApp) getApplication();
-        app.newUser(user);
-
-
-        startActivity (new Intent(this, Welcome.class));
+        Call<User> call = app.donationService.createUser(user);
+        call.enqueue(this);
     }
 
+    @Override
+    public void onResponse(Call<User> call, Response<User> response) {
+        app.users.add(response.body());
+        startActivity(new Intent(this, Welcome.class));
+    }
+
+    @Override
+    public void onFailure(Call<User> call, Throwable t) {
+        app.donationServiceAvailable = false;
+        Toast toast = Toast.makeText(this, "Donation Service Unavailable. Try again later", Toast.LENGTH_LONG);
+        toast.show();
+        startActivity (new Intent(this, Welcome.class));
+    }
 }
